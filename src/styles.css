@@ -1,0 +1,15 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+}
+
+.mat-typography {
+    font-family: Calibri, sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

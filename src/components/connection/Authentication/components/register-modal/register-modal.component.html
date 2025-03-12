@@ -1,0 +1,35 @@
+<!-- 
+
+<div class="register-modal" [class.show]="isVisible">
+    <div class="register-modal-content">
+        <h2>Register</h2>
+        <form [formGroup]="registerForm" (submit)="onSubmit()">
+            <input matInput formControlName="email" placeholder="Email">
+            <input matInput formControlName="name" placeholder="Name">
+            <input matInput formControlName="password" placeholder="Password">
+            <input type="checkbox" (change)="onCheckboxChange()">Are you a teacher?
+          
+            <button mat-raised-button color="accent" type="submit">Sign in</button>
+            <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+
+        </form>
+    </div>
+</div> -->
+
+<div class="register-modal" [class.show]="isVisible">
+    <div class="register-modal-content">
+        <h2>Register</h2>
+        <form [formGroup]="registerForm" (submit)="onSubmit()">
+            <input matInput formControlName="email" placeholder="Email" class="input-field">
+            <input matInput formControlName="name" placeholder="Name" class="input-field">
+            <input matInput formControlName="password" placeholder="Password" type="password" class="input-field">
+            <div class="checkbox-container">
+                <input type="checkbox" (change)="onCheckboxChange()"> Are you a teacher?
+            </div>
+            <div class="auth-buttons">
+                <button mat-raised-button color="accent" type="submit">Sign Up</button>
+                <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+            </div>
+        </form>
+    </div>
+</div>

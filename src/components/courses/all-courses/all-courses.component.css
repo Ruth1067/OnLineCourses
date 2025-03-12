@@ -1,0 +1,24 @@
+h2 {
+  text-align: center;
+  color: crimson;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+mat-grid-list {
+  width: 100%;
+  height: 50%;
+}
+
+mat-card {
+  background-color: white;
+  border:3px solid salmon;
+}
+.course-list button{
+  color:crimson;
+}
+
+.course-list button:hover{
+    background-color: crimson;
+    color:white;
+}

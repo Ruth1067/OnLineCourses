@@ -1,0 +1,99 @@
+/* 
+*/
+/* login-modal.component.css */
+/* 
+.login-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.login-modal.show {
+  display: block;
+}
+
+.login-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-modal-content h2 {
+  margin-top: 0;
+}
+
+.login-modal-content form {
+  margin-top: 20px;
+}
+
+.login-modal-content button {
+  margin-top: 20px;
+} */
+
+.login-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.login-modal.show {
+  display: block;
+}
+
+.login-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f0f5; /* צבע רקע בהיר */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-modal-content h2 {
+  margin-top: 0;
+  color:crimson; /* צבע כותרת */
+}
+
+.input-field {
+  width: 94.5%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  color: crimson;
+}
+
+.checkbox-container {
+  margin-top: 15px;
+}
+
+.auth-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-buttons button {
+  transition: background-color 0.3s;
+  color: crimson;
+}
+
+.auth-buttons button:hover {
+background-color: crimson; /* צבע רקע חדש כאשר העכבר מעל */
+color: #f0f4f8;
+}

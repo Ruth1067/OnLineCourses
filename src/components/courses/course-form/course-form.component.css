@@ -1,0 +1,51 @@
+.course {
+    background-color: #ffffff;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    color: crimson;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[matInput] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}z
+
+input[matInput]:focus {
+    border-color: crimson;
+    outline: none;
+}
+
+.mat-raised-button {
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}

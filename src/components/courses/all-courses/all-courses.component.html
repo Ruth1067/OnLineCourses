@@ -1,0 +1,47 @@
+<h2>Courses:</h2>
+<div class="course-list">
+  <mat-grid-list cols="3" rowHeight="1:1" gutterSize="10px">
+    @for ( course of allCourses;track course.id) {
+
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ course.title }} (ID: {{ course.id }})</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ course.description }}</p>
+          <p>Teacher : {{ course.teacherId }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          @if(authService.isTeacher==false)
+          {
+          @if(this.courseService.isEnrolled(course.id)){
+          <button mat-raised-button color="warn" class="mat-button" (click)="leaveCourse(course)">Leave</button>
+          }
+          @else {
+          <button mat-raised-button color="primary" class="mat-button" (click)="joinCourse(course)">Join</button>
+          }
+          }
+          @else {
+          <button mat-raised-button color="primary" class="mat-button" (click)="updateCourse(course)">Update</button>
+          <button mat-raised-button color="warn" class="mat-button" (click)="deleteCourse(course)">Delete</button>
+          }
+          <button mat-raised-button color="accent" class="mat-button" (click)="showDetails(course)">Show
+            Details</button>
+
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+
+    }
+  </mat-grid-list>
+  @if(authService.isTeacher==true)
+  {
+  <div>
+    <button class="b" mat-raised-button color="primary" class="mat-button" (click)="createCourse()">Add</button>
+  </div>
+  }
+  <mat-card>
+    <router-outlet></router-outlet>
+
+  </mat-card>

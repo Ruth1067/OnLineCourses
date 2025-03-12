@@ -1,0 +1,23 @@
+<!-- <div>
+    <div>
+      <h2>Lesson form</h2>
+      <form [formGroup]="lessonForm" (submit)="onSubmit()">
+          <input matInput formControlName="title" placeholder="title">
+          <input matInput formControlName="content" placeholder="content">
+        <button mat-raised-button color="accent" type="submit">Send</button>
+        <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+      </form>
+    </div>
+  </div> -->
+
+  <div class="course">
+    <div class="course-content">
+        <h2>Lesson form</h2>
+        <form [formGroup]="lessonForm" (submit)="onSubmit()">
+            <input matInput formControlName="title" placeholder="title">
+            <input matInput formControlName="content" placeholder="content">
+            <button mat-raised-button color="accent" type="submit">Send</button>
+            <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+        </form>
+    </div>
+</div>

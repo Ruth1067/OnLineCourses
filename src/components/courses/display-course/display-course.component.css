@@ -1,0 +1,12 @@
+.mat-button{
+    color: crimson;
+}
+.mat-button:hover{
+    background-color: crimson;
+    color:white;
+}
+
+mat-card{
+    background-color: #ffffff;
+    border: 1px solid crimson;
+}

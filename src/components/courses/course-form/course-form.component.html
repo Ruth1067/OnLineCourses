@@ -1,0 +1,13 @@
+<div class="course">
+    <div class="course-content">
+      <h2>Course form: </h2>
+      <h3>add course</h3>
+      <form [formGroup]="courseForm" (submit)="onSubmit()">
+          <input matInput formControlName="title" placeholder="title">
+          <input matInput formControlName="description" placeholder="description">
+        <button mat-raised-button color="accent" type="submit">Send</button>
+        <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+      </form>
+    <!-- check url and change in route  -->
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+<!-- 
+<div class="login-modal" [class.show]="isVisible">
+  <div class="login-modal-content">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (submit)="onSubmit()">
+        <input matInput formControlName="email" placeholder="Email">
+        <input matInput formControlName="password" placeholder="Password">
+      <button mat-raised-button color="accent" type="submit">Sign in</button>
+    
+      <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+    </form>
+  </div>
+</div> -->
+
+<div class="login-modal" [class.show]="isVisible">
+  <div class="login-modal-content">
+      <h2>Login</h2>
+      <form [formGroup]="loginForm" (submit)="onSubmit()">
+          <input matInput formControlName="email" placeholder="Email" class="input-field">
+          <input matInput formControlName="password" placeholder="Password" type="password" class="input-field">
+          <div class="auth-buttons">
+              <button mat-raised-button color="accent" type="submit">Sign In</button>
+              <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+          </div>
+      </form>
+  </div>
+</div>

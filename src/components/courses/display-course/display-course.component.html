@@ -1,0 +1,33 @@
+<p>lessons List</p>
+<div class="course-list">
+    <mat-grid-list cols="3" rowHeight="1:1" gutterSize="10px">
+        @for ( lesson of lessons;track lesson.id) {
+
+        <mat-grid-tile>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{ lesson.title }} (ID: {{ lesson.id }})</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{ lesson.content }}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    @if(authService.isTeacher==true)
+                    {
+                    <button mat-raised-button color="primary" class="mat-button"
+                        (click)="updateLesson(lesson)">Update</button>
+                    <button mat-raised-button color="warn" class="mat-button"
+                        (click)="deleteLesson(lesson)">Delete</button>
+                    }
+
+                </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+
+        }
+        @if(authService.isTeacher==true)
+        {
+
+         <button mat-raised-button color="warn" class="mat-button" (click)="AddLesson()">Add lesson</button>
+
+        }

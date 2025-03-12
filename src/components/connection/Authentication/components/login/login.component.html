@@ -1,0 +1,22 @@
+<!-- <button mat-raised-button color="primary" (click)="openLoginModal()">Sign in</button>
+<button mat-raised-button color="accent" (click)="openRegisterModal()">Sign up</button>
+
+ <app-login-modal [isVisible]="isLoginModalVisible"></app-login-modal>
+ <app-register-modal [isVisible]="isRegisterModalVisible"></app-register-modal>
+
+ -->
+
+
+ <div class="login-container">
+    <div class="header">
+      <h1>Welcome!</h1>
+      <div class="auth-buttons">
+        <button mat-raised-button color="primary" (click)="openLoginModal()">Sign in</button>
+        <button mat-raised-button color="accent" (click)="openRegisterModal()">Sign up</button>
+      </div>
+    </div>
+    
+    <app-login-modal [isVisible]="isLoginModalVisible"></app-login-modal>
+    <app-register-modal [isVisible]="isRegisterModalVisible"></app-register-modal>
+  </div>
+  
