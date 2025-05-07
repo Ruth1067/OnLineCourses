@@ -12,7 +12,7 @@ export const routes: Routes = [
 
     { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
-    { path:'seeAll',component:AllCoursesComponent},
+    { path: 'seeAll',component:AllCoursesComponent},
     { path: 'courses/add', component: CourseFormComponent, canActivate: [teacherConnectedGuard] },
     { path: 'courses/edit/:id', component: CourseFormComponent, canActivate: [teacherConnectedGuard] },
     { path: 'courses/:courseId/lessons/add', component: LessonFormComponent, canActivate: [teacherConnectedGuard] },
